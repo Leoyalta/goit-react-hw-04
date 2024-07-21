@@ -1,0 +1,51 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.wrapper {
+  position: relative;
+  outline: none;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.content {
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  max-width: 90%;
+  max-height: 700px;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.info {
+  padding: 10px 0;
+}
+
+.description {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.likes {
+  font-size: 14px;
+  color: #777;
+}
