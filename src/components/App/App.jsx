@@ -23,6 +23,10 @@ export default function App() {
   const [modalLikes, setModalLikes] = useState("");
 
   const handleSubmit = (newTopic) => {
+    if (newTopic === "") {
+      toast.error("Please enter a topic");
+      return;
+    }
     setPhotos([]);
     setPage(1);
     setTopic(newTopic);
